@@ -10,7 +10,8 @@ Summary(pl):	Inline::Octave - umieszczanie kodu octave w kodzie perlowym
 Name:		perl-Inline-Octave
 Version:	0.20
 Release:	1	
-License:	Artistic or GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
 # Source0-md5:	4c590abe9d4073cc35a3ad8a6322c763
