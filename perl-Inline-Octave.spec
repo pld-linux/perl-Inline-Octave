@@ -8,12 +8,12 @@
 Summary:	Inline::Octave - inline octave code into your perl
 Summary(pl):	Inline::Octave - umieszczanie kodu octave w kodzie perlowym
 Name:		perl-Inline-Octave
-Version:	0.18
-Release:	2
+Version:	0.20
+Release:	1	
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
-# Source0-md5:	522b6ca694aba1ede18b969e91d1fd2b
+# Source0-md5:	4c590abe9d4073cc35a3ad8a6322c763
 BuildRequires:	perl-devel >= 5.8
 BuildRequires:	perl-Inline >= 0.4
 BuildRequires:	rpm-perlprov >= 4.1-13
