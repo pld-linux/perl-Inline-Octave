@@ -1,28 +1,14 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Inline
 %define		pname	Octave
-Summary:	Inline::Octave Perl module
-Summary(cs):	Modul Inline::Octave pro Perl
-Summary(da):	Perlmodul Inline::Octave
-Summary(de):	Inline::Octave Perl Modul
-Summary(es):	Módulo de Perl Inline::Octave
-Summary(fr):	Module Perl Inline::Octave
-Summary(it):	Modulo di Perl Inline::Octave
-Summary(ja):	Inline::Octave Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Inline::Octave ÆŞ ¸ğÁÙ
-Summary(no):	Perlmodul Inline::Octave
-Summary(pl):	Modu³ Perla Inline::Octave
-Summary(pt):	Módulo de Perl Inline::Octave
-Summary(pt_BR):	Módulo Perl Inline::Octave
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Inline::Octave
-Summary(sv):	Inline::Octave Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Inline::Octave
-Summary(zh_CN):	Inline::Octave Perl Ä£¿é
+Summary:	Inline::Octave - inline octave code into your perl
+Summary(pl):	Inline::Octave - umieszczanie kodu octave w kodzie perlowym
 Name:		perl-Inline-Octave
-Version:	0.17
+Version:	0.18
 Release:	1
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
@@ -36,11 +22,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Inline::Octave - Inline octave code into your perl.
+Inline::Octave Perl module gives you the power of the octave
+programming language from within your Perl programs.
 
 %description -l pl
-Modu³ Inline::Octave - pozwalaj±cy na umieszczanie kodu w jêzyku
-Octave w skryptach perlowych.
+Modu³ Perla Inline::Octave umo¿liwia korzystanie z mocy jêzyka
+programowania octave wewn±trz skryptów w Perlu.
 
 %prep
 %setup -q -n %{pdir}-%{pname}-%{version}
@@ -48,6 +35,7 @@ Octave w skryptach perlowych.
 %build
 echo '/usr/bin/octave' | perl Makefile.PL
 %{__make}
+
 %{!?_without_tests:%{__make} test}
 
 %install
