@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Inline
-%define		pname	Octave
+%define		pnam	Octave
 Summary:	Inline::Octave - inline octave code into your perl
 Summary(pl):	Inline::Octave - umieszczanie kodu octave w kodzie perlowym
 Name:		perl-Inline-Octave
@@ -13,7 +13,7 @@ Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4c590abe9d4073cc35a3ad8a6322c763
 Patch0:		%{name}-test.patch
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -33,7 +33,7 @@ Modu³ Perla Inline::Octave umo¿liwia korzystanie z mocy jêzyka
 programowania octave wewn±trz skryptów w Perlu.
 
 %prep
-%setup -q -n %{pdir}-%{pname}-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -p1
 
 %build
