@@ -22,8 +22,8 @@ Summary(sv):	Inline::Octave Perlmodul
 Summary(uk):	Модуль для Perl Inline::Octave
 Summary(zh_CN):	Inline::Octave Perl дё©И
 Name:		perl-Inline-Octave
-Version:	0.16
-Release:	2
+Version:	0.17
+Release:	1
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
