@@ -1,0 +1,20 @@
+--- Inline-Octave-0.20/t/2_calling.t.orig	2004-06-01 09:20:17.000000000 +0000
++++ Inline-Octave-0.20/t/2_calling.t	2004-06-01 09:21:33.000000000 +0000
+@@ -18,12 +18,15 @@
+ 
+ # jnk2 gives warning if u=0
+ do {
++  my $ok;
+   local $SIG{__WARN__} = sub {
+-     my $ok = ($_[0] =~ /inverse: matrix singular/);
+-     ok( $ok, 1);
++    $_[0] =~ /inverse: matrix singular/
++      ? $ok++
++      : warn @_;
+   };
+ 
+   $v= jnk2(0)->disp();
++  ok( $ok, 1);
+ };
+ 
+ # jnk3 gives error for u real
