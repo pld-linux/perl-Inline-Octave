@@ -26,7 +26,7 @@ Version:	0.16
 Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Inline >= 0.4
 BuildRequires:	rpm-perlprov >= 3.0.3-16
