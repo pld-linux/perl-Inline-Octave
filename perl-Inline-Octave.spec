@@ -1,8 +1,26 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Inline
-%define	pname	Octave
-Summary:	Inline::Octave perl module
-Summary(pl):	Modu³ perla Inline::Octave
+%define		pdir	Inline
+%define		pname	Octave
+Summary:	Inline::Octave Perl module
+Summary(cs):	Modul Inline::Octave pro Perl
+Summary(da):	Perlmodul Inline::Octave
+Summary(de):	Inline::Octave Perl Modul
+Summary(es):	Módulo de Perl Inline::Octave
+Summary(fr):	Module Perl Inline::Octave
+Summary(it):	Modulo di Perl Inline::Octave
+Summary(ja):	Inline::Octave Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Inline::Octave ÆŞ ¸ğÁÙ
+Summary(no):	Perlmodul Inline::Octave
+Summary(pl):	Modu³ Perla Inline::Octave
+Summary(pt):	Módulo de Perl Inline::Octave
+Summary(pt_BR):	Módulo Perl Inline::Octave
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Inline::Octave
+Summary(sv):	Inline::Octave Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Inline::Octave
+Summary(zh_CN):	Inline::Octave Perl Ä£¿é
 Name:		perl-Inline-Octave
 Version:	0.16
 Release:	2
@@ -30,6 +48,7 @@ Octave w skryptach perlowych.
 %build
 echo '/usr/bin/octave' | perl Makefile.PL
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
