@@ -27,7 +27,7 @@ Release:	1
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
-BuildRequires:	perl >= 5.6
+BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-Inline >= 0.4
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	octave
