@@ -3,7 +3,7 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Inline
+%define	pdir	Inline
 %define		pname	Octave
 Summary:	Inline::Octave - inline octave code into your perl
 Summary(pl):	Inline::Octave - umieszczanie kodu octave w kodzie perlowym
