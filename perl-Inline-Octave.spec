@@ -9,7 +9,7 @@ Summary:	Inline::Octave - inline octave code into your perl
 Summary(pl):	Inline::Octave - umieszczanie kodu octave w kodzie perlowym
 Name:		perl-Inline-Octave
 Version:	0.20
-Release:	1	
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
