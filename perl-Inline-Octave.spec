@@ -34,7 +34,7 @@ programowania octave wewn±trz skryptów w Perlu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch -p1
+%patch0 -p1
 
 %build
 echo '/usr/bin/octave' | perl Makefile.PL \
