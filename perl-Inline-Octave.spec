@@ -6,7 +6,7 @@
 %define		pdir	Inline
 %define		pnam	Octave
 Summary:	Inline::Octave - inline octave code into your perl
-Summary(pl):	Inline::Octave - umieszczanie kodu octave w kodzie perlowym
+Summary(pl.UTF-8):   Inline::Octave - umieszczanie kodu octave w kodzie perlowym
 Name:		perl-Inline-Octave
 Version:	0.20
 Release:	2
@@ -28,9 +28,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Inline::Octave Perl module gives you the power of the octave
 programming language from within your Perl programs.
 
-%description -l pl
-Modu³ Perla Inline::Octave umo¿liwia korzystanie z mocy jêzyka
-programowania octave wewn±trz skryptów w Perlu.
+%description -l pl.UTF-8
+ModuÅ‚ Perla Inline::Octave umoÅ¼liwia korzystanie z mocy jÄ™zyka
+programowania octave wewnÄ…trz skryptÃ³w w Perlu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
