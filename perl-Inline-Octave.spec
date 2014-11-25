@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Inline
 %define		pnam	Octave
+%include	/usr/lib/rpm/macros.perl
 Summary:	Inline::Octave - inline octave code into your perl
 Summary(pl.UTF-8):	Inline::Octave - umieszczanie kodu octave w kodzie perlowym
 Name:		perl-Inline-Octave
@@ -16,10 +16,11 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4c590abe9d4073cc35a3ad8a6322c763
 Patch0:		%{name}-test.patch
-BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	perl-Inline >= 0.4
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/Inline-Octave/
 BuildRequires:	octave
+BuildRequires:	perl-Inline >= 0.4
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	octave
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
