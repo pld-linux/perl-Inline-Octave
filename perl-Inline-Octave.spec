@@ -4,7 +4,6 @@
 
 %define		pdir	Inline
 %define		pnam	Octave
-%include	/usr/lib/rpm/macros.perl
 Summary:	Inline::Octave - inline octave code into your perl
 Summary(pl.UTF-8):	Inline::Octave - umieszczanie kodu octave w kodzie perlowym
 Name:		perl-Inline-Octave
